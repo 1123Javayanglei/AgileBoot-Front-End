@@ -2,6 +2,16 @@ const Layout = () => import("@/layout/index.vue");
 
 export default [
   {
+    path: "/gis",
+    name: "GisMap",
+    component: () => import("@/views/gis/index.vue"),
+    meta: {
+      title: "地图",
+      showLink: false,
+      rank: 100
+    }
+  },
+  {
     path: "/login",
     name: "Login",
     component: () => import("@/views/login/index.vue"),
